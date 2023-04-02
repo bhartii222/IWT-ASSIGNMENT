@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Question 18</title>
+        <style>
+           .container{
+                width:500px;
+                height:900px;
+                border: solid 5px rgb(4, 9, 83);
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;  
+                flex-flow: row wrap;
+                justify-content:center;
+                align-items:center;
+                background-color: rgb(43, 2, 24);
+
+            }
+           .container > div{
+                height: 200px;
+                width: 200px;
+                border-color:rgb(78, 2, 34);
+                border-style:solid;
+                background-color: rgb(240, 101, 177);
+                margin:5px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                font-size:50px;
+                color:rgb(255, 255, 255);
+                position: relative;
+                animation-name: animate1;
+                animation-duration: 2s;
+                animation-iteration-count:infinite;
+                animation-direction: alternate-reverse;
+                text-shadow: 0 0 20px red;
+                animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+
+            }
+            .container>div:hover{
+                color: rgb(36, 1, 36);
+                background: rgb(15, 15, 15);
+                transform: rotate(360deg) scale(2) skew(45deg) translatey(100px);
+                transition: 2s;
+            }
+            @keyframes animate1{
+                    from{
+                        top: 0;
+                        left: 0;
+                        transform: rotate(0deg);
+                        40% {
+                            left: 400px;
+                            top: 0;
+                        }
+                    }
+                    to{
+                        left:900px;
+                        transform: rotate(180deg);
+                    }
+                }
+           
+            
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </body>
+</html>

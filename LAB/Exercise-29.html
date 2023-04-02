@@ -1,0 +1,21 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+        <div id='text'> TEXTGROW </div>
+        <script>
+            <button onclick="increase()"> CLICK IT </button>
+        size=5;
+        block=document.getElementById('text');
+        function increase() {
+            block.style.fontSize=size++;
+            if(size==50)
+               setInterval(decrease , 1000)
+        }
+        function decrease(){
+           block.style.fontSize=size--;
+           if(size==5)
+           setInterval(increase , 1000)
+
+        }
